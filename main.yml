@@ -1,5 +1,5 @@
 ---
-- hosts: dev
+- hosts: win
   gather_facts: true
   vars:
     region: us-west-2
