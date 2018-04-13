@@ -1,0 +1,13 @@
+---
+- hosts: win
+  gather_facts: no
+  vars:
+    region: us-west-2
+  tasks:
+   - name: Touch a file (creates if not present, updates modification time if present)
+     win_file:
+        region: "{{ region }}"
+        AWS_ACCESS_KEY_ID: "{{ access }}"
+        AWS_SECRET_ACCESS_KEY: "{{ secret }}"
+        path: C:\Users\hari.txt
+        state: touch
