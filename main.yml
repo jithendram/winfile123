@@ -9,5 +9,5 @@
         region: "{{ region }}"
         AWS_ACCESS_KEY_ID: "{{ access }}"
         AWS_SECRET_ACCESS_KEY: "{{ secret }}"
-        path: C:\Users\hari.txt
+        path: C:\Users\cricket
         state: touch
